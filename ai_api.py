@@ -120,7 +120,7 @@ def analyse_mistakes(target, predicted):
 
 def feedback(score):
     if score.final >= 90:
-        return "Perfect pronunciation 🎉"
+        return "Perfect pronunciation"
     if score.final >= 70:
         return "Good job, but needs small improvements"
     if score.final >= 50:
@@ -200,7 +200,7 @@ async def evaluate_audio(
 
 @app.get("/")
 def root():
-    return {"status": "ArticuLearn running 🚀"}
+    return {"status": "ArticuLearn running"}
 
 @app.get("/health")
 def health():
